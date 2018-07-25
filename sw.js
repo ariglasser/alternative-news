@@ -1,3 +1,4 @@
+const test="just a test";
 const cacheName = 'news-v1';
 
 const staticAssets = [
@@ -7,6 +8,8 @@ const staticAssets = [
   './fallback.json',
   './images/fetch-dog.jpg'
 ];
+
+
 
 self.addEventListener('install', async function () {
   const cache = await caches.open(cacheName);
